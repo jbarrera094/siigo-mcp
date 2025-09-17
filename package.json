@@ -1,0 +1,60 @@
+{
+  "name": "siigo-mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) server for Siigo Colombian accounting software API integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "jest",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf dist"
+  },
+  "bin": {
+    "siigo-mcp": "./bin/siigo-mcp"
+  },
+  "files": [
+    "dist/",
+    "bin/",
+    "README.md",
+    ".env.example"
+  ],
+  "keywords": [
+    "mcp",
+    "siigo", 
+    "accounting",
+    "api",
+    "colombia",
+    "invoicing",
+    "model-context-protocol",
+    "erp",
+    "fintech"
+  ],
+  "author": "Juan Diego De la Rosa <jdidelarc@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdlar1/siigo-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jdlar1/siigo-mcp/issues"
+  },
+  "homepage": "https://github.com/jdlar1/siigo-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0"
+  }
+}
