@@ -1,5 +1,5 @@
 {
-  "name": "siigo-mcp-server",
+  "name": "@jbarrera/siigo-mcp-server",
   "version": "1.0.0",
   "description": "Model Context Protocol (MCP) server for Siigo Colombian accounting software API integration",
   "main": "dist/index.js",
@@ -7,6 +7,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
+    "deploy": "npm run build && npm start",
     "dev": "tsx src/index.ts",
     "test": "jest",
     "prepublishOnly": "npm run build",
@@ -23,7 +24,7 @@
   ],
   "keywords": [
     "mcp",
-    "siigo", 
+    "siigo",
     "accounting",
     "api",
     "colombia",
